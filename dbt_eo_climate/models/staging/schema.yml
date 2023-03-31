@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: staging
+      database: mattsat
+      schema: landsat_data
+
+      tables:
+          - name: ndvi_pusch_ridge_north
+          - name: ndvi_saguaro_np_east
+          - name: ndvi_saguaro_np_west
+          - name: ndvi_mt_wrightson_south
