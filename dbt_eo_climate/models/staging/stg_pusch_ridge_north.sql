@@ -10,7 +10,7 @@ with stg_push_ridge_north as
 select
     -- identifiers
     image_name,
-    cast(SUBSTR(image_name, 18, 8) as timestamp,
+    cast(SUBSTR(image_name, 18, 8)) as timestamp,
     cast(year as integer) as year,
     cast(month as integer) as month,
     cast(mean as numeric) as ndvi_mean,
