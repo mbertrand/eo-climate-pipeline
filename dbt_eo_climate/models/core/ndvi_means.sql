@@ -44,5 +44,6 @@ select
     ndvi_unioned.study_area,
     ndvi_unioned.ndvi_mean,
     ndvi_unioned.year,
-    ndvi_unioned.month
+    ndvi_unioned.month,
+    cast(FORMAT_DATE("%Y-%m", image_dt) as string) as year_month
 from ndvi_unioned

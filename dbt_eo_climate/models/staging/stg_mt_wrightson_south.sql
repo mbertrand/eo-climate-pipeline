@@ -16,7 +16,7 @@ select
     cast(year as integer) as year,
     cast(month as integer) as month,
     cast(mean as float64)  as ndvi_mean,
-    cast(pixel_count as integer) as pixel_count,
+    cast(pixel_count as integer) as pixel_count
 from stg_mt_wrightson_south
 where rn = 1
 order by year, month
