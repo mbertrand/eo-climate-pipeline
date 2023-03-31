@@ -1,10 +1,10 @@
 {{ config(materialized="view")}}
 
-with stg_push_ridge_north as
+with stg_saguaro_np_east as
 (
   select *,
     row_number() over(partition by SPLIT(image, '/')[OFFSET(5)]) as rn
-  from {{ source('staging','ndvi_pusch_ridge_north') }}
+  from {{ source('staging','ndvi_saguaro_np_east') }}
   where SUBSTR(SPLIT(image, '/')[OFFSET(5)], 18) is not null and mean <= 1 and mean >= -1
 )
 select
@@ -17,6 +17,6 @@ select
     cast(month as integer) as month,
     cast(mean as float64)  as ndvi_mean,
     cast(pixel_count as integer) as pixel_count,
-from stg_push_ridge_north
+from stg_saguaro_np_east
 where rn = 1
 order by year, month
