@@ -41,7 +41,7 @@ ndvi_unioned as (
 select 
     ndvi_unioned.image_id,
     ndvi_unioned.image_dt,
-    ndvi_unioned.study_area,
+    cast ({{ get_study_area_title('ndvi_unioned.study_area') }} as string) as study_area,
     ndvi_unioned.ndvi_mean,
     ndvi_unioned.year,
     ndvi_unioned.month,
