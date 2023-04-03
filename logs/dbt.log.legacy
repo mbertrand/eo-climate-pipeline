@@ -21035,3 +21035,386 @@ from ndvi_unioned
 2023-04-03 12:24:23.540401 (Thread-78): handling status request
 2023-04-03 12:24:23.540894 (Thread-78): 12:24:23  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc7267f490>]}
 2023-04-03 12:24:23.541415 (Thread-78): sending response (<Response 2997 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:24:50.823048 (Thread-79): 12:24:50  checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347, vars: {}, profile: user, target: None, version: 1.4.5
+2023-04-03 12:24:50.840495 (Thread-79): 12:24:50  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-04-03 12:24:50.840908 (Thread-79): 12:24:50  previous checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, current checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347
+2023-04-03 12:24:50.841116 (Thread-79): 12:24:50  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fea57f0>]}
+2023-04-03 12:24:51.062517 (Thread-80): handling status request
+2023-04-03 12:24:51.078410 (Thread-80): 12:24:51  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc74e97220>]}
+2023-04-03 12:24:51.089148 (Thread-80): sending response (<Response 180 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:24:51.996592 (Thread-79): 12:24:51  1603: static parser failed on core/ndvi_means.sql
+2023-04-03 12:24:52.003364 (Thread-79): 12:24:52  1602: parser fallback to jinja rendering on core/ndvi_means.sql
+2023-04-03 12:24:52.005438 (Thread-79): 12:24:52  1699: static parser successfully parsed staging/stg_saguaro_np_west.sql
+2023-04-03 12:24:52.008352 (Thread-79): 12:24:52  1699: static parser successfully parsed staging/stg_pusch_ridge_north.sql
+2023-04-03 12:24:52.011195 (Thread-79): 12:24:52  1699: static parser successfully parsed staging/stg_mt_wrightson_south.sql
+2023-04-03 12:24:52.014262 (Thread-79): 12:24:52  1699: static parser successfully parsed staging/stg_saguaro_np_east.sql
+2023-04-03 12:24:52.119646 (Thread-79): 12:24:52  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_eo_climate.example
+2023-04-03 12:24:52.126121 (Thread-79): 12:24:52  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fe37be0>]}
+2023-04-03 12:24:52.152266 (Thread-81): handling status request
+2023-04-03 12:24:52.152752 (Thread-81): 12:24:52  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fe31fd0>]}
+2023-04-03 12:24:52.153302 (Thread-81): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:25.786691 (Thread-82): handling status request
+2023-04-03 12:25:25.787220 (Thread-82): 12:25:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fe311f0>]}
+2023-04-03 12:25:25.787807 (Thread-82): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:25.942261 (Thread-83): handling cli_args request
+2023-04-03 12:25:25.942771 (Thread-83): 12:25:25  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fe313a0>]}
+2023-04-03 12:25:29.114268 (Thread-83): sending response (<Response 133 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:29.164424 (MainThread): 12:25:29  checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, vars: {}, profile: None, target: None, version: 1.4.5
+2023-04-03 12:25:29.181566 (MainThread): 12:25:29  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-04-03 12:25:29.181762 (MainThread): 12:25:29  previous checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347, current checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6
+2023-04-03 12:25:29.181921 (MainThread): 12:25:29  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff702f2af0>]}
+2023-04-03 12:25:29.382434 (Thread-84): handling poll request
+2023-04-03 12:25:29.383059 (Thread-84): 12:25:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf645b0>]}
+2023-04-03 12:25:29.415581 (Thread-85): handling ps request
+2023-04-03 12:25:29.416118 (Thread-85): 12:25:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf565e0>]}
+2023-04-03 12:25:29.420539 (Thread-84): sending response (<Response 1855 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:29.421292 (Thread-85): sending response (<Response 3466 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:29.585488 (Thread-86): handling ps request
+2023-04-03 12:25:29.585972 (Thread-86): 12:25:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf64ac0>]}
+2023-04-03 12:25:29.586658 (Thread-86): sending response (<Response 3466 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:29.614479 (Thread-87): handling status request
+2023-04-03 12:25:29.614953 (Thread-87): 12:25:29  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf64af0>]}
+2023-04-03 12:25:29.615550 (Thread-87): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:30.331825 (MainThread): 12:25:30  1603: static parser failed on core/ndvi_means.sql
+2023-04-03 12:25:30.348637 (MainThread): 12:25:30  1602: parser fallback to jinja rendering on core/ndvi_means.sql
+2023-04-03 12:25:30.350299 (MainThread): 12:25:30  1699: static parser successfully parsed staging/stg_saguaro_np_west.sql
+2023-04-03 12:25:30.353266 (MainThread): 12:25:30  1699: static parser successfully parsed staging/stg_pusch_ridge_north.sql
+2023-04-03 12:25:30.356188 (MainThread): 12:25:30  1699: static parser successfully parsed staging/stg_mt_wrightson_south.sql
+2023-04-03 12:25:30.358860 (MainThread): 12:25:30  1699: static parser successfully parsed staging/stg_saguaro_np_east.sql
+2023-04-03 12:25:30.572860 (MainThread): 12:25:30  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_eo_climate.example
+2023-04-03 12:25:30.579130 (MainThread): 12:25:30  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff7047cf70>]}
+2023-04-03 12:25:30.608611 (MainThread): 12:25:30  Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6f930fa0>]}
+2023-04-03 12:25:30.608990 (MainThread): 12:25:30  Found 5 models, 0 tests, 0 snapshots, 0 analyses, 525 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics
+2023-04-03 12:25:30.609141 (MainThread): 12:25:30  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff7047cf70>]}
+2023-04-03 12:25:30.610464 (MainThread): 12:25:30  
+2023-04-03 12:25:30.611746 (MainThread): 12:25:30  Acquiring new bigquery connection 'master'
+2023-04-03 12:25:30.613259 (ThreadPoolExecutor-0_0): 12:25:30  Acquiring new bigquery connection 'list_mattsat'
+2023-04-03 12:25:30.613493 (ThreadPoolExecutor-0_0): 12:25:30  Opening a new connection, currently in state init
+2023-04-03 12:25:30.860387 (ThreadPoolExecutor-1_0): 12:25:30  Acquiring new bigquery connection 'list_mattsat_dbt_mbertrand'
+2023-04-03 12:25:30.860674 (ThreadPoolExecutor-1_0): 12:25:30  Opening a new connection, currently in state closed
+2023-04-03 12:25:31.012884 (Thread-88): handling poll request
+2023-04-03 12:25:31.013381 (Thread-88): 12:25:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6fe310d0>]}
+2023-04-03 12:25:31.014005 (Thread-88): sending response (<Response 6089 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:31.027893 (MainThread): 12:25:31  Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6fab5190>]}
+2023-04-03 12:25:31.028635 (MainThread): 12:25:31  Concurrency: 4 threads (target='default')
+2023-04-03 12:25:31.028805 (MainThread): 12:25:31  
+2023-04-03 12:25:31.031725 (Thread-1): 12:25:31  Began running node model.dbt_eo_climate.stg_mt_wrightson_south
+2023-04-03 12:25:31.032088 (Thread-1): 12:25:31  1 of 5 START sql view model dbt_mbertrand.stg_mt_wrightson_south ............... [RUN]
+2023-04-03 12:25:31.032602 (Thread-1): 12:25:31  Acquiring new bigquery connection 'model.dbt_eo_climate.stg_mt_wrightson_south'
+2023-04-03 12:25:31.032813 (Thread-1): 12:25:31  Began compiling node model.dbt_eo_climate.stg_mt_wrightson_south
+2023-04-03 12:25:31.036923 (Thread-2): 12:25:31  Began running node model.dbt_eo_climate.stg_pusch_ridge_north
+2023-04-03 12:25:31.037237 (Thread-2): 12:25:31  2 of 5 START sql view model dbt_mbertrand.stg_pusch_ridge_north ................ [RUN]
+2023-04-03 12:25:31.037732 (Thread-2): 12:25:31  Acquiring new bigquery connection 'model.dbt_eo_climate.stg_pusch_ridge_north'
+2023-04-03 12:25:31.037910 (Thread-2): 12:25:31  Began compiling node model.dbt_eo_climate.stg_pusch_ridge_north
+2023-04-03 12:25:31.041197 (Thread-2): 12:25:31  Writing injected SQL for node "model.dbt_eo_climate.stg_pusch_ridge_north"
+2023-04-03 12:25:31.041311 (Thread-1): 12:25:31  Writing injected SQL for node "model.dbt_eo_climate.stg_mt_wrightson_south"
+2023-04-03 12:25:31.042066 (Thread-3): 12:25:31  Began running node model.dbt_eo_climate.stg_saguaro_np_east
+2023-04-03 12:25:31.042382 (Thread-3): 12:25:31  3 of 5 START sql view model dbt_mbertrand.stg_saguaro_np_east .................. [RUN]
+2023-04-03 12:25:31.042876 (Thread-3): 12:25:31  Acquiring new bigquery connection 'model.dbt_eo_climate.stg_saguaro_np_east'
+2023-04-03 12:25:31.043053 (Thread-3): 12:25:31  Began compiling node model.dbt_eo_climate.stg_saguaro_np_east
+2023-04-03 12:25:31.046357 (Thread-3): 12:25:31  Writing injected SQL for node "model.dbt_eo_climate.stg_saguaro_np_east"
+2023-04-03 12:25:31.049920 (Thread-4): 12:25:31  Began running node model.dbt_eo_climate.stg_saguaro_np_west
+2023-04-03 12:25:31.050232 (Thread-4): 12:25:31  4 of 5 START sql view model dbt_mbertrand.stg_saguaro_np_west .................. [RUN]
+2023-04-03 12:25:31.050711 (Thread-4): 12:25:31  Acquiring new bigquery connection 'model.dbt_eo_climate.stg_saguaro_np_west'
+2023-04-03 12:25:31.050881 (Thread-4): 12:25:31  Began compiling node model.dbt_eo_climate.stg_saguaro_np_west
+2023-04-03 12:25:31.054027 (Thread-4): 12:25:31  Writing injected SQL for node "model.dbt_eo_climate.stg_saguaro_np_west"
+2023-04-03 12:25:31.060123 (Thread-3): 12:25:31  Timing info for model.dbt_eo_climate.stg_saguaro_np_east (compile): 2023-04-03 12:25:31.043097 => 2023-04-03 12:25:31.059940
+2023-04-03 12:25:31.060396 (Thread-3): 12:25:31  Began executing node model.dbt_eo_climate.stg_saguaro_np_east
+2023-04-03 12:25:31.065632 (Thread-2): 12:25:31  Timing info for model.dbt_eo_climate.stg_pusch_ridge_north (compile): 2023-04-03 12:25:31.037954 => 2023-04-03 12:25:31.065330
+2023-04-03 12:25:31.065871 (Thread-2): 12:25:31  Began executing node model.dbt_eo_climate.stg_pusch_ridge_north
+2023-04-03 12:25:31.096247 (Thread-1): 12:25:31  Timing info for model.dbt_eo_climate.stg_mt_wrightson_south (compile): 2023-04-03 12:25:31.032871 => 2023-04-03 12:25:31.095970
+2023-04-03 12:25:31.096549 (Thread-1): 12:25:31  Began executing node model.dbt_eo_climate.stg_mt_wrightson_south
+2023-04-03 12:25:31.128880 (Thread-1): 12:25:31  Writing runtime sql for node "model.dbt_eo_climate.stg_mt_wrightson_south"
+2023-04-03 12:25:31.130347 (Thread-3): 12:25:31  Writing runtime sql for node "model.dbt_eo_climate.stg_saguaro_np_east"
+2023-04-03 12:25:31.130472 (Thread-2): 12:25:31  Writing runtime sql for node "model.dbt_eo_climate.stg_pusch_ridge_north"
+2023-04-03 12:25:31.130851 (Thread-4): 12:25:31  Timing info for model.dbt_eo_climate.stg_saguaro_np_west (compile): 2023-04-03 12:25:31.050925 => 2023-04-03 12:25:31.130671
+2023-04-03 12:25:31.131092 (Thread-4): 12:25:31  Began executing node model.dbt_eo_climate.stg_saguaro_np_west
+2023-04-03 12:25:31.136163 (Thread-4): 12:25:31  Writing runtime sql for node "model.dbt_eo_climate.stg_saguaro_np_west"
+2023-04-03 12:25:31.149469 (Thread-3): 12:25:31  Opening a new connection, currently in state init
+2023-04-03 12:25:31.149829 (Thread-2): 12:25:31  Opening a new connection, currently in state init
+2023-04-03 12:25:31.150639 (Thread-4): 12:25:31  Opening a new connection, currently in state init
+2023-04-03 12:25:31.150966 (Thread-1): 12:25:31  Opening a new connection, currently in state closed
+2023-04-03 12:25:31.154640 (Thread-3): 12:25:31  On model.dbt_eo_climate.stg_saguaro_np_east: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "user", "target_name": "default", "node_id": "model.dbt_eo_climate.stg_saguaro_np_east"} */
+
+
+  create or replace view `mattsat`.`dbt_mbertrand`.`stg_saguaro_np_east`
+  OPTIONS()
+  as 
+
+with stg_saguaro_np_east as
+(
+  select *,
+    row_number() over(partition by SPLIT(image, '/')[OFFSET(5)]) as rn
+  from `mattsat`.`landsat_data`.`ndvi_saguaro_np_east`
+  where SUBSTR(SPLIT(image, '/')[OFFSET(5)], 18) is not null and mean <= 1 and mean >= -1
+)
+select
+    -- identifiers
+    cast(CONCAT(study_area, '_', SPLIT(image, '/')[OFFSET(5)]) as string) as image_id,
+    cast(SPLIT(image, '/')[OFFSET(5)] as string) as image_name,
+    cast(study_area as string) as study_area,
+    cast(CONCAT(year, '-', month, '-', SUBSTR(SPLIT(image, '/')[OFFSET(5)], 24, 2)) as date) as image_dt,
+    cast(year as integer) as year,
+    cast(month as integer) as month,
+    cast(mean as float64)  as ndvi_mean,
+    cast(pixel_count as integer) as pixel_count,
+from stg_saguaro_np_east
+where rn = 1
+order by year, month;
+
+
+2023-04-03 12:25:31.155787 (Thread-2): 12:25:31  On model.dbt_eo_climate.stg_pusch_ridge_north: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "user", "target_name": "default", "node_id": "model.dbt_eo_climate.stg_pusch_ridge_north"} */
+
+
+  create or replace view `mattsat`.`dbt_mbertrand`.`stg_pusch_ridge_north`
+  OPTIONS()
+  as 
+
+with stg_push_ridge_north as
+(
+  select *,
+    row_number() over(partition by SPLIT(image, '/')[OFFSET(5)]) as rn
+  from `mattsat`.`landsat_data`.`ndvi_pusch_ridge_north`
+  where SUBSTR(SPLIT(image, '/')[OFFSET(5)], 18) is not null and mean <= 1 and mean >= -1
+)
+select
+    -- identifiers
+    cast(CONCAT(study_area, '_', SPLIT(image, '/')[OFFSET(5)]) as string) as image_id,
+    cast(SPLIT(image, '/')[OFFSET(5)] as string) as image_name,
+    cast(study_area as string) as study_area,
+    cast(CONCAT(year, '-', month, '-', SUBSTR(SPLIT(image, '/')[OFFSET(5)], 24, 2)) as date) as image_dt,
+    cast(year as integer) as year,
+    cast(month as integer) as month,
+    cast(mean as float64)  as ndvi_mean,
+    cast(pixel_count as integer) as pixel_count,
+from stg_push_ridge_north
+where rn = 1
+order by year, month;
+
+
+2023-04-03 12:25:31.156860 (Thread-4): 12:25:31  On model.dbt_eo_climate.stg_saguaro_np_west: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "user", "target_name": "default", "node_id": "model.dbt_eo_climate.stg_saguaro_np_west"} */
+
+
+  create or replace view `mattsat`.`dbt_mbertrand`.`stg_saguaro_np_west`
+  OPTIONS()
+  as 
+
+with stg_saguaro_np_west as
+(
+  select *,
+    row_number() over(partition by SPLIT(image, '/')[OFFSET(5)]) as rn
+  from `mattsat`.`landsat_data`.`ndvi_saguaro_np_west`
+  where SUBSTR(SPLIT(image, '/')[OFFSET(5)], 18) is not null and mean <= 1 and mean >= -1
+)
+select
+    -- identifiers
+    cast(CONCAT(study_area, '_', SPLIT(image, '/')[OFFSET(5)]) as string) as image_id,
+    cast(SPLIT(image, '/')[OFFSET(5)] as string) as image_name,
+    cast(study_area as string) as study_area,
+    cast(CONCAT(year, '-', month, '-', SUBSTR(SPLIT(image, '/')[OFFSET(5)], 24, 2)) as date) as image_dt,
+    cast(year as integer) as year,
+    cast(month as integer) as month,
+    cast(mean as float64)  as ndvi_mean,
+    cast(pixel_count as integer) as pixel_count,
+from stg_saguaro_np_west
+where rn = 1
+order by year, month;
+
+
+2023-04-03 12:25:31.157845 (Thread-1): 12:25:31  On model.dbt_eo_climate.stg_mt_wrightson_south: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "user", "target_name": "default", "node_id": "model.dbt_eo_climate.stg_mt_wrightson_south"} */
+
+
+  create or replace view `mattsat`.`dbt_mbertrand`.`stg_mt_wrightson_south`
+  OPTIONS()
+  as 
+
+with stg_mt_wrightson_south as
+(
+  select *,
+    row_number() over(partition by SPLIT(image, '/')[OFFSET(5)]) as rn
+  from `mattsat`.`landsat_data`.`ndvi_mt_wrightson_south`
+  where SUBSTR(SPLIT(image, '/')[OFFSET(5)], 18) is not null and mean <= 1 and mean >= -1
+)
+select
+    -- identifiers
+    cast(CONCAT(study_area, '_', SPLIT(image, '/')[OFFSET(5)]) as string) as image_id,
+    cast(SPLIT(image, '/')[OFFSET(5)] as string) as image_name,
+    cast(study_area as string) as study_area,
+    cast(CONCAT(year, '-', month, '-', SUBSTR(SPLIT(image, '/')[OFFSET(5)], 24, 2)) as date) as image_dt,
+    cast(year as integer) as year,
+    cast(month as integer) as month,
+    cast(mean as float64)  as ndvi_mean,
+    cast(pixel_count as integer) as pixel_count
+from stg_mt_wrightson_south
+where rn = 1
+order by year, month;
+
+
+2023-04-03 12:25:31.812336 (Thread-2): 12:25:31  BigQuery adapter: https://console.cloud.google.com/bigquery?project=mattsat&j=bq:US:e632fb5e-ddcd-4431-af76-bab32395db38&page=queryresults
+2023-04-03 12:25:31.830283 (Thread-2): 12:25:31  Timing info for model.dbt_eo_climate.stg_pusch_ridge_north (execute): 2023-04-03 12:25:31.065921 => 2023-04-03 12:25:31.830108
+2023-04-03 12:25:31.831034 (Thread-2): 12:25:31  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6c0a02b0>]}
+2023-04-03 12:25:31.831486 (Thread-2): 12:25:31  2 of 5 OK created sql view model dbt_mbertrand.stg_pusch_ridge_north ........... [CREATE VIEW (0 processed) in 0.79s]
+2023-04-03 12:25:31.832832 (Thread-2): 12:25:31  Finished running node model.dbt_eo_climate.stg_pusch_ridge_north
+2023-04-03 12:25:31.860527 (Thread-4): 12:25:31  BigQuery adapter: https://console.cloud.google.com/bigquery?project=mattsat&j=bq:US:6a7c39f0-f9f4-4f45-91ee-a0e11578f72b&page=queryresults
+2023-04-03 12:25:31.862133 (Thread-4): 12:25:31  Timing info for model.dbt_eo_climate.stg_saguaro_np_west (execute): 2023-04-03 12:25:31.131141 => 2023-04-03 12:25:31.861981
+2023-04-03 12:25:31.862800 (Thread-4): 12:25:31  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6f9cbe50>]}
+2023-04-03 12:25:31.863400 (Thread-4): 12:25:31  4 of 5 OK created sql view model dbt_mbertrand.stg_saguaro_np_west ............. [CREATE VIEW (0 processed) in 0.81s]
+2023-04-03 12:25:31.863637 (Thread-4): 12:25:31  Finished running node model.dbt_eo_climate.stg_saguaro_np_west
+2023-04-03 12:25:31.979445 (Thread-89): handling ps request
+2023-04-03 12:25:31.979937 (Thread-89): 12:25:31  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cfc06a0>]}
+2023-04-03 12:25:31.980680 (Thread-89): sending response (<Response 3466 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:32.097064 (Thread-1): 12:25:32  BigQuery adapter: https://console.cloud.google.com/bigquery?project=mattsat&j=bq:US:d6cd36d2-2355-4edd-b2ff-841f4d81a8b6&page=queryresults
+2023-04-03 12:25:32.098621 (Thread-1): 12:25:32  Timing info for model.dbt_eo_climate.stg_mt_wrightson_south (execute): 2023-04-03 12:25:31.096603 => 2023-04-03 12:25:32.098464
+2023-04-03 12:25:32.099298 (Thread-1): 12:25:32  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6f9fb610>]}
+2023-04-03 12:25:32.099724 (Thread-1): 12:25:32  1 of 5 OK created sql view model dbt_mbertrand.stg_mt_wrightson_south .......... [CREATE VIEW (0 processed) in 1.07s]
+2023-04-03 12:25:32.099947 (Thread-1): 12:25:32  Finished running node model.dbt_eo_climate.stg_mt_wrightson_south
+2023-04-03 12:25:32.190832 (Thread-3): 12:25:32  BigQuery adapter: https://console.cloud.google.com/bigquery?project=mattsat&j=bq:US:54c8eea0-22ff-4764-be25-c4d20432bc46&page=queryresults
+2023-04-03 12:25:32.192434 (Thread-3): 12:25:32  Timing info for model.dbt_eo_climate.stg_saguaro_np_east (execute): 2023-04-03 12:25:31.060448 => 2023-04-03 12:25:32.192271
+2023-04-03 12:25:32.193137 (Thread-3): 12:25:32  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6fa47940>]}
+2023-04-03 12:25:32.193558 (Thread-3): 12:25:32  3 of 5 OK created sql view model dbt_mbertrand.stg_saguaro_np_east ............. [CREATE VIEW (0 processed) in 1.15s]
+2023-04-03 12:25:32.193782 (Thread-3): 12:25:32  Finished running node model.dbt_eo_climate.stg_saguaro_np_east
+2023-04-03 12:25:32.195178 (Thread-2): 12:25:32  Began running node model.dbt_eo_climate.ndvi_means
+2023-04-03 12:25:32.195527 (Thread-2): 12:25:32  5 of 5 START sql table model dbt_mbertrand.ndvi_means .......................... [RUN]
+2023-04-03 12:25:32.196019 (Thread-2): 12:25:32  Acquiring new bigquery connection 'model.dbt_eo_climate.ndvi_means'
+2023-04-03 12:25:32.196232 (Thread-2): 12:25:32  Began compiling node model.dbt_eo_climate.ndvi_means
+2023-04-03 12:25:32.201677 (Thread-2): 12:25:32  Writing injected SQL for node "model.dbt_eo_climate.ndvi_means"
+2023-04-03 12:25:32.215064 (Thread-2): 12:25:32  Timing info for model.dbt_eo_climate.ndvi_means (compile): 2023-04-03 12:25:32.196282 => 2023-04-03 12:25:32.214868
+2023-04-03 12:25:32.215315 (Thread-2): 12:25:32  Began executing node model.dbt_eo_climate.ndvi_means
+2023-04-03 12:25:32.228838 (Thread-2): 12:25:32  Opening a new connection, currently in state closed
+2023-04-03 12:25:32.434679 (Thread-2): 12:25:32  Writing runtime sql for node "model.dbt_eo_climate.ndvi_means"
+2023-04-03 12:25:32.447632 (Thread-2): 12:25:32  On model.dbt_eo_climate.ndvi_means: /* {"app": "dbt", "dbt_version": "1.4.5", "profile_name": "user", "target_name": "default", "node_id": "model.dbt_eo_climate.ndvi_means"} */
+
+  
+    
+
+    create or replace table `mattsat`.`dbt_mbertrand`.`ndvi_means`
+    partition by image_dt
+    cluster by study_area
+    OPTIONS()
+    as (
+      
+
+with north_data as (
+    select * 
+    from `mattsat`.`dbt_mbertrand`.`stg_pusch_ridge_north`
+), 
+
+east_data as (
+    select *
+    from `mattsat`.`dbt_mbertrand`.`stg_saguaro_np_east`
+), 
+
+south_data as (
+    select *
+    from `mattsat`.`dbt_mbertrand`.`stg_mt_wrightson_south`
+), 
+
+west_data as (
+    select *
+    from `mattsat`.`dbt_mbertrand`.`stg_saguaro_np_west`
+), 
+
+ndvi_unioned as (
+    select * from north_data
+    union all
+    select * from east_data
+    union all
+    select * from south_data
+    union all
+    select * from west_data
+)
+
+select 
+    ndvi_unioned.image_id,
+    ndvi_unioned.image_dt,
+    cast (case ndvi_unioned.study_area
+        when 'pusch_ridge_north' then 'Pusch Ridge (North)'
+        when 'saguaro_np_east' then 'Saguaro National Park (East)'
+        when 'saguaro_np_west' then 'Saguaro National Park (West)'
+<<<<<<< HEAD
+        when 'mt_wrightson_south' then 'Mt. Wrightson (South)'
+=======
+        when 'mt_wrightson_south' then 'My Wrightson (South)'
+>>>>>>> e8eaae7f6819cb415f82863ceb154f37b6a9bd4b
+    end as string) as study_area,
+    ndvi_unioned.ndvi_mean,
+    ndvi_unioned.year,
+    ndvi_unioned.month,
+    cast(FORMAT_DATE("%Y-%m", image_dt) as string) as year_month
+<<<<<<< HEAD
+from ndvi_unioned
+=======
+from ndvi_unioned
+>>>>>>> e8eaae7f6819cb415f82863ceb154f37b6a9bd4b
+    );
+  
+2023-04-03 12:25:32.517614 (Thread-90): handling status request
+2023-04-03 12:25:32.518110 (Thread-90): 12:25:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cfc0f70>]}
+2023-04-03 12:25:32.518640 (Thread-90): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:32.614529 (Thread-2): 12:25:32  BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Unexpected "<<" at [50:3]')
+2023-04-03 12:25:32.635408 (Thread-91): handling poll request
+2023-04-03 12:25:32.635893 (Thread-91): 12:25:32  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6ce9b0d0>]}
+2023-04-03 12:25:32.637161 (Thread-91): sending response (<Response 38286 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:33.019299 (Thread-2): 12:25:33  BigQuery adapter: https://console.cloud.google.com/bigquery?project=mattsat&j=bq:US:77d9347d-2f23-4455-bc41-0e808bda6b00&page=queryresults
+2023-04-03 12:25:33.019638 (Thread-2): 12:25:33  Timing info for model.dbt_eo_climate.ndvi_means (execute): 2023-04-03 12:25:32.215366 => 2023-04-03 12:25:33.019486
+2023-04-03 12:25:33.023317 (Thread-2): 12:25:33  Database Error in model ndvi_means (dbt_eo_climate/models/core/ndvi_means.sql)
+  Syntax error: Unexpected "<<" at [50:3]
+  compiled Code at dbt_eo_climate/target/run/dbt_eo_climate/dbt_eo_climate/models/core/ndvi_means.sql
+2023-04-03 12:25:33.023656 (Thread-2): 12:25:33  Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '411c9e01-3fdc-40a9-a98d-66583b5d0e3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7eff6f955250>]}
+2023-04-03 12:25:33.024338 (Thread-2): 12:25:33  5 of 5 ERROR creating sql table model dbt_mbertrand.ndvi_means ................. [ERROR in 0.83s]
+2023-04-03 12:25:33.024700 (Thread-2): 12:25:33  Finished running node model.dbt_eo_climate.ndvi_means
+2023-04-03 12:25:33.026622 (MainThread): 12:25:33  Acquiring new bigquery connection 'master'
+2023-04-03 12:25:33.027110 (MainThread): 12:25:33  Connection 'master' was properly closed.
+2023-04-03 12:25:33.027261 (MainThread): 12:25:33  Connection 'model.dbt_eo_climate.stg_mt_wrightson_south' was properly closed.
+2023-04-03 12:25:33.027369 (MainThread): 12:25:33  Connection 'model.dbt_eo_climate.ndvi_means' was properly closed.
+2023-04-03 12:25:33.027523 (MainThread): 12:25:33  Connection 'model.dbt_eo_climate.stg_saguaro_np_east' was properly closed.
+2023-04-03 12:25:33.027689 (MainThread): 12:25:33  Connection 'model.dbt_eo_climate.stg_saguaro_np_west' was properly closed.
+2023-04-03 12:25:33.027897 (MainThread): 12:25:33  
+2023-04-03 12:25:33.028066 (MainThread): 12:25:33  Finished running 4 view models, 1 table model in 0 hours 0 minutes and 2.42 seconds (2.42s).
+2023-04-03 12:25:33.092611 (MainThread): 12:25:33  
+2023-04-03 12:25:33.092901 (MainThread): 12:25:33  Completed with 1 error and 0 warnings:
+2023-04-03 12:25:33.093037 (MainThread): 12:25:33  
+2023-04-03 12:25:33.093181 (MainThread): 12:25:33  Database Error in model ndvi_means (dbt_eo_climate/models/core/ndvi_means.sql)
+2023-04-03 12:25:33.093313 (MainThread): 12:25:33    Syntax error: Unexpected "<<" at [50:3]
+2023-04-03 12:25:33.093421 (MainThread): 12:25:33    compiled Code at dbt_eo_climate/target/run/dbt_eo_climate/dbt_eo_climate/models/core/ndvi_means.sql
+2023-04-03 12:25:33.093544 (MainThread): 12:25:33  
+2023-04-03 12:25:33.093676 (MainThread): 12:25:33  Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+2023-04-03 12:25:33.852426 (Thread-92): handling poll request
+2023-04-03 12:25:33.853202 (Thread-92): 12:25:33  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cfc0eb0>]}
+2023-04-03 12:25:33.854541 (Thread-92): sending response (<Response 30697 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:34.530537 (Thread-93): handling ps request
+2023-04-03 12:25:34.531027 (Thread-93): 12:25:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf561f0>]}
+2023-04-03 12:25:34.531751 (Thread-93): sending response (<Response 3490 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:34.719707 (Thread-94): handling status request
+2023-04-03 12:25:34.720246 (Thread-94): 12:25:34  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf49640>]}
+2023-04-03 12:25:34.720835 (Thread-94): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:44.061734 (Thread-95): handling ps request
+2023-04-03 12:25:44.062241 (Thread-95): 12:25:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf64e20>]}
+2023-04-03 12:25:44.062989 (Thread-95): sending response (<Response 3490 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:25:44.069222 (Thread-96): handling status request
+2023-04-03 12:25:44.069549 (Thread-96): 12:25:44  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6cf64760>]}
+2023-04-03 12:25:44.069994 (Thread-96): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:26:00.795504 (Thread-97): 12:26:00  checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347, vars: {}, profile: user, target: None, version: 1.4.5
+2023-04-03 12:26:00.812548 (Thread-97): 12:26:00  Unable to do partial parsing because config vars, config profile, or config target have changed
+2023-04-03 12:26:00.812914 (Thread-97): 12:26:00  previous checksum: e05dd7cee44d39ae8ac27965cacd8a6d8d0ab4e8185101e0db84e98f79bee0b6, current checksum: 9f5971860ea7956c5d0d162f1c96671df61b5ad9db5c4152918680483cec5347
+2023-04-03 12:26:00.813109 (Thread-97): 12:26:00  Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6ce9dbb0>]}
+2023-04-03 12:26:01.124247 (Thread-98): handling status request
+2023-04-03 12:26:01.145272 (Thread-98): 12:26:01  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc6ce55520>]}
+2023-04-03 12:26:01.156202 (Thread-98): sending response (<Response 180 bytes [200 OK]>) to 10.0.192.52
+2023-04-03 12:26:01.976264 (Thread-97): 12:26:01  1603: static parser failed on core/ndvi_means.sql
+2023-04-03 12:26:01.983387 (Thread-97): 12:26:01  1602: parser fallback to jinja rendering on core/ndvi_means.sql
+2023-04-03 12:26:01.985132 (Thread-97): 12:26:01  1699: static parser successfully parsed staging/stg_saguaro_np_west.sql
+2023-04-03 12:26:01.988029 (Thread-97): 12:26:01  1699: static parser successfully parsed staging/stg_pusch_ridge_north.sql
+2023-04-03 12:26:01.990825 (Thread-97): 12:26:01  1699: static parser successfully parsed staging/stg_mt_wrightson_south.sql
+2023-04-03 12:26:01.993861 (Thread-97): 12:26:01  1699: static parser successfully parsed staging/stg_saguaro_np_east.sql
+2023-04-03 12:26:02.106037 (Thread-97): 12:26:02  [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_eo_climate.example
+2023-04-03 12:26:02.112844 (Thread-97): 12:26:02  Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc67f1cc10>]}
+2023-04-03 12:26:02.114063 (Thread-99): handling status request
+2023-04-03 12:26:02.114470 (Thread-99): 12:26:02  Sending event: {'category': 'dbt', 'action': 'rpc_request', 'label': '1c6d415e-5ad6-450d-b85b-4b49b848bfd5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbc67f1b0a0>]}
+2023-04-03 12:26:02.114988 (Thread-99): sending response (<Response 4470 bytes [200 OK]>) to 10.0.192.52
