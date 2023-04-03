@@ -46,4 +46,8 @@ select
     ndvi_unioned.year,
     ndvi_unioned.month,
     cast(FORMAT_DATE("%Y-%m", image_dt) as string) as year_month
+<<<<<<< HEAD
 from ndvi_unioned
+=======
+from ndvi_unioned
+>>>>>>> e8eaae7f6819cb415f82863ceb154f37b6a9bd4b
