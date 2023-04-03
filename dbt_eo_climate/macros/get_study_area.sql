@@ -10,7 +10,10 @@
         when 'saguaro_np_east' then 'Saguaro National Park (East)'
         when 'saguaro_np_west' then 'Saguaro National Park (West)'
         when 'mt_wrightson_south' then 'Mt. Wrightson (South)'
+<<<<<<< HEAD
         when 'mt_wrightson_south' then 'My Wrightson (South)'
+=======
+>>>>>>> b329302977368d47da29907f192921b48f782b21
     end
 
 {%- endmacro %}
