@@ -10,3 +10,183 @@ sources:
           - name: ndvi_saguaro_np_east
           - name: ndvi_saguaro_np_west
           - name: ndvi_mt_wrightson_south
+
+
+models:
+  - name: stg_mt_wrightson_south
+    description: >
+      Table of mean NDVI values per Landsat satellite image in the Mt. Wrightson study area south of Tucson, Arizona.
+    columns:
+      - name: image_id
+        description: The id for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: image_name
+        description: The base file name for each Landsat image
+        tests:
+            - not_null:
+                severity: error                   
+      - name: image_dt
+        description: The acquisition date for each Landsat image
+        tests:
+            - not_null:
+                severity: error      
+      - name: study_area
+        description: The study area covered by the Landsat image
+        tests:
+            - not_null:
+                severity: error     
+      - name: ndvi_mean
+        description: The mean NDVI value for each Landsat image
+        tests:
+            - not_null:
+                severity: error                 
+      - name: year
+        description: The year of each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: month
+        description: The month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: pixel_count
+        description: The number of unmasked (cloud-free) pixels in each image
+        tests:
+            - not_null:
+                severity: error
+
+  - name: stg_pusch_ridge_north
+    description: >
+      Table of mean NDVI values per Landsat satellite image in the Pusch Ridge study area north of Tucson, Arizona.
+    columns:
+      - name: image_id
+        description: The id for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: image_name
+        description: The base file name for each Landsat image
+        tests:
+            - not_null:
+                severity: error                   
+      - name: image_dt
+        description: The acquisition date for each Landsat image
+        tests:
+            - not_null:
+                severity: error      
+      - name: study_area
+        description: The study area covered by the Landsat image
+        tests:
+            - not_null:
+                severity: error     
+      - name: ndvi_mean
+        description: The mean NDVI value for each Landsat image
+        tests:
+            - not_null:
+                severity: error                 
+      - name: year
+        description: The year of each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: month
+        description: The month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: pixel_count
+        description: The number of unmasked (cloud-free) pixels in each image
+        tests:
+            - not_null:
+                severity: error
+  - name: stg_saguaro_np_east
+    description: >
+      Table of mean NDVI values per Landsat satellite image in the Saguaro National Park study area east of Tucson, Arizona.
+    columns:
+      - name: image_id
+        description: The id for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: image_name
+        description: The base file name for each Landsat image
+        tests:
+            - not_null:
+                severity: error                   
+      - name: image_dt
+        description: The acquisition date for each Landsat image
+        tests:
+            - not_null:
+                severity: error      
+      - name: study_area
+        description: The study area covered by the Landsat image
+        tests:
+            - not_null:
+                severity: error     
+      - name: ndvi_mean
+        description: The mean NDVI value for each Landsat image
+        tests:
+            - not_null:
+                severity: error                 
+      - name: year
+        description: The year of each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: month
+        description: The month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: pixel_count
+        description: The number of unmasked (cloud-free) pixels in each image
+        tests:
+            - not_null:
+                severity: error
+  - name: stg_saguaro_np_west
+    description: >
+      Table of mean NDVI values per Landsat satellite image in the Saguaro National Park study area west of Tucson, Arizona.
+    columns:
+      - name: image_id
+        description: The id for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: image_name
+        description: The base file name for each Landsat image
+        tests:
+            - not_null:
+                severity: error                   
+      - name: image_dt
+        description: The acquisition date for each Landsat image
+        tests:
+            - not_null:
+                severity: error      
+      - name: study_area
+        description: The study area covered by the Landsat image
+        tests:
+            - not_null:
+                severity: error     
+      - name: ndvi_mean
+        description: The mean NDVI value for each Landsat image
+        tests:
+            - not_null:
+                severity: error                 
+      - name: year
+        description: The year of each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: month
+        description: The month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: pixel_count
+        description: The number of unmasked (cloud-free) pixels in each image
+        tests:
+            - not_null:
+                severity: error

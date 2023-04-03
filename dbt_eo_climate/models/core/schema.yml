@@ -1,0 +1,43 @@
+version: 2
+
+models:      
+  - name: ndvi_means
+    description: >
+      Aggregated table of all mean NDVI values per Landsat satellite image across four study areas surrounding Tucson, Arizona.
+      The table is partitioned by image date and clustered by study area.
+    columns:
+      - name: image_id
+        description: The id for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: image_dt
+        description: The acquisition date for each Landsat image
+        tests:
+            - not_null:
+                severity: error      
+      - name: study_area
+        description: The study area covered by the Landsat image
+        tests:
+            - not_null:
+                severity: error     
+      - name: ndvi_mean
+        description: The mean NDVI value for each Landsat image
+        tests:
+            - not_null:
+                severity: error                 
+      - name: year
+        description: The year of each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: month
+        description: The month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
+      - name: year_month
+        description: The year and month for each Landsat image
+        tests:
+            - not_null:
+                severity: error
