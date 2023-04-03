@@ -9,6 +9,9 @@ The dashboard below shows the mean NDVI over time from 2018 through early 2023 a
 
 The live dashboard is available at [this link](https://lookerstudio.google.com/reporting/f519ed16-b314-4720-a1e8-0bebc3724295).
 
+![Screenshot 2023-04-03 at 8 28 12 AM](https://user-images.githubusercontent.com/187676/229644289-83521140-da3d-4265-a5a9-e25cd01c8aa5.png)
+
+
 ## How to run
 
 #### Dependencies
