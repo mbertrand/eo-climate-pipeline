@@ -66,9 +66,6 @@ def process_images(
     study_area: str, images: list[dict], bands: list[str], bbox: tuple[float]
 ):
     """Save images for each band to the data lake"""
-    print(
-        f"Retrieving {len(images)} images for {study_area}: {[image['id'] for image in images]}"
-    )
     for image in images:
         date = image["properties"]["datetime"][0:10]
         for band in bands:
@@ -102,16 +99,16 @@ def landsat_parent_flow(
     """Run get_landsat_data for each study area json file"""
     today = datetime.today()
     if not geojson_files:
-        geojson_files = ["saguaro_np_east.json"]
+        geojson_files = STUDY_AREAS
     if not bands:
         bands = ["red", "nir08", "qa_pixel"]
     if not start_date:
-        start_date = (today - timedelta(days=7)).strftime("%Y-%m-%d")
+        start_date = (today - timedelta(days=14)).strftime("%Y-%m-%d")
     if not end_date:
         end_date = today.strftime("%Y-%m-%d")
 
     for geojson_file in geojson_files:
-        with open(geojson_file, "r") as geojson_inf:
+        with open(f"geojson/{geojson_file}", "r") as geojson_inf:
             geojson_content = load(geojson_inf)
         study_area = Path(geojson_file).stem
         geometry = geojson_content["features"][0]["geometry"]
@@ -124,6 +121,4 @@ def landsat_parent_flow(
 
 
 if __name__ == "__main__":
-    landsat_parent_flow(
-        geojson_files=STUDY_AREAS, start_date="2018-03-01", end_date="2020-03-31"
-    )
+    landsat_parent_flow()

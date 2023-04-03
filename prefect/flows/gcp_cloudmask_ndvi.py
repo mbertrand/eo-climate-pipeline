@@ -86,9 +86,13 @@ def process_image_set(image_path: str):
         ndvi = (nir_data - red_data) / (nir_data + red_data)
         ndvi_masked = np.ma.masked_array(ndvi, mask=cloud_only_mask)
 
+        """
+        Uncomment the following lines if you wish to save NDVI images to your Google Cloud bucket
+        """
         # Path(out_img).parent.mkdir(parents=True, exist_ok=True)
         # with rio.open(out_img, "w", **profile) as dest:
         #     dest.write(ndvi_masked, 1)
+
         return (
             out_img,
             np.mean(ndvi_masked),
@@ -167,14 +171,14 @@ def landsat_parent_flow(
     if not project_id:
         project_id = os.environ.get("TF_VAR_project", "mattsat")
     if not study_areas:
-        study_areas = ["saguaro_np_east"]
+        study_areas = STUDY_AREAS
 
     if not start_date:
         start_date = today - relativedelta(days=14)
     else:
         start_date = datetime.strptime(start_date, "%Y-%m-%d")
     if not end_date:
-        end_date = today - relativedelta(days=7)
+        end_date = today
     else:
         end_date = datetime.strptime(end_date, "%Y-%m-%d")
 
@@ -183,8 +187,4 @@ def landsat_parent_flow(
 
 
 if __name__ == "__main__":
-    landsat_parent_flow(
-        study_areas=["mt_wrightson_south"],
-        start_date="2022-01-01",
-        end_date="2023-03-31",
-    )
+    landsat_parent_flow()
