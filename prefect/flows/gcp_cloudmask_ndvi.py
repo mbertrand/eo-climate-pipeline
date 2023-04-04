@@ -158,7 +158,7 @@ def calculate_ndvi(
 
 
 @flow(log_prints=True)
-def landsat_parent_flow(
+def ndvi_parent_flow(
     study_areas: List[str] = None,
     start_date: str = None,
     end_date: str = None,
@@ -187,4 +187,4 @@ def landsat_parent_flow(
 
 
 if __name__ == "__main__":
-    landsat_parent_flow()
+    ndvi_parent_flow()
