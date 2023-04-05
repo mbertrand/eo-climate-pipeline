@@ -31,6 +31,7 @@ pip install -r requirements.txt
    export TF_VAR_project=<your_project_name>
    export GOOGLE_APPLICATION_CREDENTIALS=<path/to/your service credentials json file>
    ```
+- Run `source .env`  
 - Authenticate with google cloud via the CLI
   ```
   gcloud auth application-default login
