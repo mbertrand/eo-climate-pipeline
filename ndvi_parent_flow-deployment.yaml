@@ -1,0 +1,68 @@
+###
+### A complete description of a Prefect Deployment for flow 'ndvi-parent-flow'
+###
+name: landsat_gcp_cloudmask_ndvi
+description: Calculate NDVI for images in a list of study areas within the specified
+  date range.
+version: 603c0d68db4174443ecec2ab3ffc6ae2
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: ndvi-parent-flow
+manifest_path: null
+storage:
+  repository: https://github.com/mbertrand/eo-climate-pipeline.git
+  reference: null
+  access_token: null
+  include_git_objects: true
+  _block_document_id: 132f7c4f-b30c-4e65-8bca-90a007e6fd95
+  _block_document_name: eo-climate-github
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: prefect/flows/gcp_cloudmask_ndvi.py:ndvi_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    study_areas:
+      title: study_areas
+      position: 0
+      type: array
+      items:
+        type: string
+    start_date:
+      title: start_date
+      position: 1
+      type: string
+    end_date:
+      title: end_date
+      position: 2
+      type: string
+    project_id:
+      title: project_id
+      position: 3
+      type: string
+  required: null
+  definitions: null
+timestamp: '2023-04-04T12:07:30.373464+00:00'

@@ -44,14 +44,26 @@ pip install -r requirements.txt
 #### Prefect
 - Login to Prefect Cloud (unless you want to run locally)
   - ```prefect cloud login``` 
-- Run each of the python files in the blocks folder.  You can schedule these to run automcatically in Prefect Cloud if you wish. You can adjust the date parameters either via the Prefect Cloud UI or by adjusting the default parameters in the python files.
+- Run each of the python files in the blocks folder.  
    ```
-   cd prefect/blocks
-   python make_gcp_blocks.py
-   cd ../flows
-   python aws_to_gcp_subset.py  # Downloads image subsets to data lake
-   python gcp_cloudmask_ndvi.py # Masks image pixels w/cloud cover, calculates NDVI, saves image summary stats to BigQuery
+   python prefect/blocks/make_gcp_blocks.py
+   python prefect/blocks/make_github_block.py
    ```
+
+- Run the prefect pipelines, you can deploy them to the cloud and run from there:
+  ```
+  prefect deployment build  prefect/flows/aws_to_gcp_subset.py:landsat_parent_flow -n landsat_aws_to_gcp_subset -q default -sb github/eo-climate-github -a
+  prefect deployment build  prefect/flows/gcp_cloudmask_ndvi.py:ndvi_parent_flow -n landsat_gcp_cloudmask_ndvi -q default -sb github/eo-climate-github -a
+  prefect agent start -q 'default'
+  ```
+- or run locally:
+  ```
+  python prefect/flows/aws_to_gcp_subset.py
+  python prefect/flows/gcp_cloudmask_ndvi.py
+  ```
+
+You can schedule these to run automcatically in Prefect Cloud if you wish. You can adjust the date parameters either via the Prefect Cloud UI or by adjusting the default parameters in the python files.  
+
 
 ###### DBT
 Follow [these instructions](https://docs.getdbt.com/docs/quickstarts/dbt-cloud/bigquery#connect-dbt-cloud-to-bigquery) to run the dbt scripts in the cloud, and as described in the [data engineering zoomcamp videos](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_4_analytics_engineering#deploying-a-dbt-project).  You will need to fork this repo.
