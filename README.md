@@ -61,9 +61,14 @@ pip install -r requirements.txt
   python prefect/flows/aws_to_gcp_subset.py
   python prefect/flows/gcp_cloudmask_ndvi.py
   ```
+  
+The `aws_to_gcp_subset.py` pipeline searches for Landsat satellite images covering the study area(s) within a specified time period and save the intersecting subset of each image to a data warehouse (Google Cloude bucket).
+The `gcp_cloudmask_ndvi.py` pipeline masks out cloud cover in each image, calculates the NDVI from the red and near-infrared bands, and saved the mean NDVI per image in a BigQuery datalake.
 
 You can schedule these to run automcatically in Prefect Cloud if you wish. You can adjust the date parameters either via the Prefect Cloud UI or by adjusting the default parameters in the python files.  
 
 
 ###### DBT
 Follow [these instructions](https://docs.getdbt.com/docs/quickstarts/dbt-cloud/bigquery#connect-dbt-cloud-to-bigquery) to run the dbt scripts in the cloud, and as described in the [data engineering zoomcamp videos](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_4_analytics_engineering#deploying-a-dbt-project).  You will need to fork this repo.
+
+The dbt scripts transform the NDVI data from BigQuery, creating a new table free of duplicates, partitioned by date, and clustered by study area.
