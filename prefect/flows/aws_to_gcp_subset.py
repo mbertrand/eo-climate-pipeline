@@ -108,7 +108,9 @@ def landsat_parent_flow(
         end_date = today.strftime("%Y-%m-%d")
 
     for geojson_file in geojson_files:
-        path_to_geojson = os.path.join(Path(os.path.abspath(__file__)).parent, "geojson")
+        path_to_geojson = os.path.join(
+            Path(os.path.abspath(__file__)).parent, "geojson"
+        )
         with open(os.path.join(path_to_geojson, geojson_file), "r") as geojson_inf:
             geojson_content = load(geojson_inf)
         study_area = Path(geojson_file).stem
