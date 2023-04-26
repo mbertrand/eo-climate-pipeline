@@ -2,7 +2,7 @@
 
 NDVI is a quantitative measurement derived from the red and near-infrared bands of satellite images.  It is useful as an indicator of vegetation density and drought conditions.
 
-This demo data pipeline project extracts subsets of Landsat data within a specified date range across 4 regions surrounding Tucson, Arizone.  For each subsetted image, cloudy areas are masked out, the NDVI is calculated, and the mean NDVI per image is saved to a BigQuery database.
+This demo data pipeline project extracts subsets of Landsat data within a specified date range across 4 regions surrounding Tucson, Arizona.  For each subsetted image, cloudy areas are masked out, the NDVI is calculated, and the mean NDVI per image is saved to a BigQuery database.
 The dashboard below shows the mean NDVI over time from 2018 through early 2023 across the 4 study areas.
 
 ## Dashboard
